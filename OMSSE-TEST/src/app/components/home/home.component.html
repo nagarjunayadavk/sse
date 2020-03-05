@@ -1,0 +1,7 @@
+<div class="container" id = "main-container">
+    <div class="row">
+        <ng-container *ngFor="let card of cards; let i = index">
+            <app-card [componentNumber]="i+1" *ngIf="card.isShow" class="col-md-6" ></app-card>
+        </ng-container>
+    </div>
+</div>

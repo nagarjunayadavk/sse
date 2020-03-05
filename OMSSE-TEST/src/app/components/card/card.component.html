@@ -1,0 +1,12 @@
+<div>
+    <div class="container card">
+        <div class="componentCardNumber">
+            {{componentNumber}}
+        </div>
+        <div class="row">
+            <div class="col-md-6" *ngFor="let cd of cardList; let i = index">
+                <button class="btn" type="button" (click)="showHideCard(cd.name)"> {{i+1}} </button>
+            </div>
+        </div>
+    </div>
+</div>
